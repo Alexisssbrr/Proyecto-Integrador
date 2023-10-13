@@ -1,0 +1,10 @@
+.asd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pagination-container {
+    text-align: center;
+    display: inline-block;
+  }
