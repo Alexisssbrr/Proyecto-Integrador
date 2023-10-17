@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/fuentes.css">
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
@@ -88,6 +89,47 @@
                 </div>
             </div>
         </nav>
+    <!--finish header-->
+
+
+
+    <!-- START BODY -->
+    <br>
+    <form class="recuadro">
+        <br>
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" Nombre="Nombre" required>
+        <br>
+        <label for="Comentario">Comentario:</label>
+        <input type="text" id="Comentario" Comentario="Comentario" required>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <br>
+    <div class="comment">
+        <bold>Ana Jael</bold>
+        <p>Los precios son increibles!</p>
+    </div>
+    <script>
+        document.getElementById('add-comment-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Get values from the form
+            var Nombre = document.getElementById('Nombre').value;
+            var Comentario = document.getElementById('Comentario').value;
+
+            // Create a new comment element
+            var newComment = document.createElement('div');
+            newComment.className = 'Comentario';
+            newComment.innerHTML = '<bold>' + Nombre + '</bold><p>' + Comentario + '</p>';
+
+            // Append the new comment to the comments container
+            document.getElementById('comments-container').appendChild(newComment);
+
+            // Clear the form
+            document.getElementById('add-comment-form').reset();
+        });
+        </script>
     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">

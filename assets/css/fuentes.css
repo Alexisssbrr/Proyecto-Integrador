@@ -4,7 +4,55 @@
     align-items: center;
   }
 
-  .pagination-container {
-    text-align: center;
-    display: inline-block;
-  }
+
+  body {
+    font-family: Arial, sans-serif;
+}
+
+.comments-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.comment-form {
+    margin-top: 20px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 20px;
+}
+
+.recuadro {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centra el recuadro horizontalmente */
+}
+
+/* Estilos adicionales según tu preferencia */
+.recuadro label,
+.recuadro input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.recuadro button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
